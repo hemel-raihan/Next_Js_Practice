@@ -56,6 +56,9 @@ function User()
                       <Link href={`/users/${user.id}`} >
                       <a><h3>{user.id}: {user.name}</h3></a>
                       </Link>
+                      <Link href={`/users/edit/${user.id}`} >
+                      <a><button>Edit</button></a>
+                      </Link>
                       <button onClick={()=> handledltbtn(user.id)}>Delete</button>
                       </div>
                   )
