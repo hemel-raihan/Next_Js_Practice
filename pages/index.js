@@ -19,6 +19,9 @@ function Home()
       <Link href="/post">
          <a><h3>go to Post page</h3></a>
       </Link>
+      <Link href="/users">
+         <a><h3>go to User List</h3></a>
+      </Link>
       
       <button onClick={handleclick}>Form Submit</button>
     </div>
