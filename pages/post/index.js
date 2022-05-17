@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Header from "../../components/header";
 function PostList({data})
 {
     return(
@@ -30,6 +31,16 @@ export async function getStaticProps(ctx)
             data: data,
         },
     }
+}
+
+PostList.getLayout = function getLayout(page)
+{
+    return (
+        <div>
+            <Header/>
+            {page}
+        </div>
+    );
 }
 
 export default PostList;

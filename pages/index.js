@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from 'next/router';
+import styles from "../styles/Home.module.css";
 
 function Home()
 {
@@ -9,9 +10,10 @@ function Home()
   }
   return (
     <div>
+    
       <h1>This is Home Page</h1>
       <Link href="/doc">
-        <a><h3>go to about page</h3></a>
+        <a><h3 className={styles.menu}>go to about page</h3></a>
       </Link>
       <Link href="/blog">
         <a><h3>go to blog page</h3></a>
@@ -24,6 +26,7 @@ function Home()
       </Link>
       
       <button onClick={handleclick}>Form Submit</button>
+
     </div>
   );
 }
