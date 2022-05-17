@@ -16,7 +16,10 @@ function Home()
       <Link href="/blog">
         <a><h3>go to blog page</h3></a>
       </Link>
-      <a href="/post"><h3>go to Post page</h3></a>
+      <Link href="/post">
+         <a><h3>go to Post page</h3></a>
+      </Link>
+      
       <button onClick={handleclick}>Form Submit</button>
     </div>
   );
